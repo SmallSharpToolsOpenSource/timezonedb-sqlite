@@ -22,6 +22,14 @@ select datetime(-2147483648, 'unixepoch') as epoch_time;
 select datetime(1420255959, 'unixepoch') as epoch_time;
 ```
 
+### Data Extraction
+
+All of the data is quite large and only a subset may be needed. The script
+named `us_timezones.sql` is used to extract just US timezones and the query
+results can be exported to a JSON file which is then trimmed further with
+`trim_us_timezones.js` to make the data file as small as possible and quick
+to navigate.
+
 ### Sources
 
 http://timezonedb.com
