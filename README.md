@@ -4,7 +4,7 @@
 
 Create the tables in a SQLite database using the 3 table create statements in
 `sqlite.sql`. Then use a tool like SQLite Professional to import the data from
-(timezonedb.com)[http://www.timezonedb.com].
+[timezonedb.com](http://www.timezonedb.com).
 
 ### Querying
 
