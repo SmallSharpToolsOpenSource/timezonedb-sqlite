@@ -1,10 +1,17 @@
 # Timezone Data
 
+SQLite support for data from [timezonedb.com](http://www.timezonedb.com).
+
 ### Import
 
-Create the tables in a SQLite database using the 3 table create statements in
-`sqlite.sql`. Then use a tool like [SQLite Professional](https://itunes.apple.com/us/app/sqlite-professional-sql-database/id586001240?mt=12)
-to import the data from [timezonedb.com](http://www.timezonedb.com).
+All data can be downloaded from timezonedb.com and
+unzipped here. Then create the tables in a SQLite database using the 3 table
+create statements in `sqlite.sql`. Use a tool like
+[SQLite Professional](https://itunes.apple.com/us/app/sqlite-professional-sql-database/id586001240?mt=12)
+to import the data.
+
+The samples from timezonedb.com are for Postgres while the scripts here are
+made for SQLite.
 
 ### Querying
 
@@ -17,9 +24,11 @@ time starts at 0 on the first day of 1970. Negative and positive values are
 valid.
 
 ```sql
-select datetime(0, 'unixepoch') as epoch_time;
-select datetime(-2147483648, 'unixepoch') as epoch_time;
-select datetime(1420255959, 'unixepoch') as epoch_time;
+SELECT DATETIME(0, 'unixepoch') AS epoch_time;
+SELECT DATETIME(-2147483648, 'unixepoch') AS epoch_time;
+SELECT DATETIME(1420255959, 'unixepoch') AS epoch_time;
+
+SELECT STRFTIME('%s','now') AS unix_time;
 ```
 
 ### Data Extraction
