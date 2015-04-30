@@ -5,9 +5,9 @@ SQLite support for data from [timezonedb.com](http://www.timezonedb.com).
 ### Import
 
 All data can be downloaded from timezonedb.com and
-unzipped here. Then create the tables in a SQLite database using the 3 table
+unzipped in the root folder. Then create the tables in a SQLite database using the 3 table
 create statements in `sqlite.sql`. Use a tool like
-[SQLite Professional](https://itunes.apple.com/us/app/sqlite-professional-sql-database/id586001240?mt=12)
+[SQPro for SQLite](https://itunes.apple.com/us/app/sqlite-professional-sql-database/id586001240?mt=12)
 to import the data.
 
 The samples from timezonedb.com are for Postgres while the scripts here are
