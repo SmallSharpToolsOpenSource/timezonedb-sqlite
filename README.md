@@ -39,6 +39,9 @@ results can be exported to a JSON file which is then trimmed further with
 `trim_us_timezones.js` to make the data file as small as possible and quick
 to navigate.
 
+Generating additional JSON data files could be used and merged together
+with a task running like [Grunt](http://gruntjs.com/).
+
 ### Sources
 
 http://timezonedb.com
