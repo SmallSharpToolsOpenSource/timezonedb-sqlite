@@ -1,4 +1,4 @@
-# Timezone Data
+# Timezone Data for SQLite
 
 SQLite support for data from [timezonedb.com](http://www.timezonedb.com).
 
@@ -7,7 +7,7 @@ SQLite support for data from [timezonedb.com](http://www.timezonedb.com).
 All data can be downloaded from timezonedb.com and
 unzipped in the root folder. Then create the tables in a SQLite database using the 3 table
 create statements in `sqlite.sql`. Use a tool like
-[SQPro for SQLite](https://itunes.apple.com/us/app/sqlite-professional-sql-database/id586001240?mt=12)
+[SQLPro for SQLite](https://itunes.apple.com/us/app/sqlite-professional-sql-database/id586001240?mt=12)
 to import the data.
 
 The samples from timezonedb.com are for Postgres while the scripts here are
